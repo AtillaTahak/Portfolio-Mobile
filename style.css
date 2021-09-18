@@ -3,9 +3,10 @@
 .work {
   display: grid;
   grid-template-rows: 1fr;
-  background-color: #e5e5e5;
   justify-content: center;
   margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .work-title {
@@ -77,28 +78,34 @@
   background-image: url("./img/ImgPlaceholder1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
-
-.work-items-project-button > button {
-  background: rgba(255, 255, 255, 0.24);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
-  color: white;
-  border: none;
-  height: 50px;
-  margin-bottom: 22px;
+.work-items-project-button-list > li{
+    background: rgba(255, 255, 255, 0.24);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    border: none;
+    height: 25px;
+    margin-bottom: 22px;
+    float: left;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 12px;
+  padding: 12px 10px;
 }
-
-.work-items-project-button > button:hover {
-  text-decoration: underline;
+.work-items-project-button-list li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+  }
+  
+  .work-items-project-button-list li a:hover {
+    text-decoration: underline;
   text-decoration-color: #396df2;
-}
+  }
 
 .work-items-project > h5 {
   margin-top: 108px;
@@ -136,9 +143,10 @@
 .about {
   display: flex;
   flex-direction: column;
+ align-items: center;
   margin: 24px 0;
   background-color: #1c1a19;
-  height: 2000px;
+  height: 2750px;
 }
 
 .about-items {
@@ -187,16 +195,21 @@
   color: #fff;
 }
 
+
+
 .about-items > ul {
+    color: white;
   list-style: none;
   font-size: 32px;
 }
-
 .about-items > ul li::before {
   content: "\2022";
   color: #ff6b00;
   line-height: 100px;
   font-size: 32px;
+}
+.sublist{
+    list-style: none;
 }
 
 .background {
