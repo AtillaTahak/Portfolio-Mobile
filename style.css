@@ -1,5 +1,4 @@
 /* stylelint-disable no-descending-specificity */
-
 .work {
   display: grid;
   grid-template-rows: 1fr;
@@ -36,19 +35,26 @@
   padding-left: 12px;
 }
 
-.work-items-button > button {
-  padding-left: 12px;
-  background: #fff;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.work-items-button > ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.work-items-button > ul li {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  border: 1px solid #8993a4;
+  border: 1px solid#8993A4;
+  height: 48px;
+  margin-left: 12px;
   box-sizing: border-box;
-  color: #091e42;
-  left: 0;
-  top: 0;
+  background: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .work-items-button > button:hover {
@@ -60,7 +66,6 @@
   width: 124px;
   height: 48px;
   background-color: #ff6b00;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -70,8 +75,9 @@
 }
 
 .work-items-see > button:hover {
-  text-decoration: underline;
-  text-decoration-color: #396df2;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
 }
 
 .work-items-project {
@@ -82,7 +88,6 @@
 
 .work-items-project-button-list > li {
   background: rgba(255, 255, 255, 0.24);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -119,7 +124,6 @@
 }
 
 .work-items-project > p {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -135,7 +139,6 @@
   background: #ff6b00;
   border: none;
   color: #fff;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -167,7 +170,6 @@
 }
 
 .about-items > p {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -176,8 +178,9 @@
 }
 
 .about-items > button:hover {
-  text-decoration: underline;
-  text-decoration-color: #396df2;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
 }
 
 .about-items > button {
@@ -188,7 +191,6 @@
   top: 395px;
   border: none;
   background: #ff6b00;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -210,8 +212,13 @@
   font-size: 32px;
 }
 
+.about-items > hr {
+  width: 400px;
+}
+
 .sublist {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .background {
@@ -235,8 +242,9 @@
 }
 
 .seeall > button:hover {
-  text-decoration: underline;
-  text-decoration-color: #396df2;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
 }
 
 .work-items-project > p:hover {
