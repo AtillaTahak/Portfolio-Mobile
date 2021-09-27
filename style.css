@@ -36,12 +36,14 @@
 }
 
 .work-items-button > ul {
-  display: flex;
+  display: relative;
   list-style: none;
   padding-left: 0;
 }
 
 .work-items-button > ul li {
+  display: inline;
+  float:initial;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -56,6 +58,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   color: #091e42;
+  margin-left: 0px;
 }
 
 li:hover {
