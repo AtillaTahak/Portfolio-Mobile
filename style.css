@@ -97,6 +97,7 @@ li:hover {
 
 .work-items-project-button-list > li {
   background: rgba(255, 255, 255, 0.24);
+  float: initial;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -108,8 +109,9 @@ li:hover {
   float: left;
   list-style: none;
   text-decoration: none;
-  margin-left: 12px;
+  margin-left: 0px;
   padding: 12px 10px;
+  margin-right: 2px;
 }
 
 .work-items-project-button-list li a {
