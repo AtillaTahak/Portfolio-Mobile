@@ -309,16 +309,53 @@ input {
   width: 295px;
   margin-top: 39px;
 }
+input::placeholder{
+  font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
 
-#message {
+
+color: #3C3A39;
+}
+
+textarea {
   border: none;
   width: 327px;
   height: 114px;
   margin-top: 36px;
   margin-left: 24px;
+  background: #FBF8F7;
+}
+textarea::placeholder{
+  font-family: inherit;
+  font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+
+color: #3C3A39;
 }
 
 .button {
   background-color: #FF6B00;
   color: #ffffff;
+  width: 131px;
+  height: 48px;
+  font-size: 17px;
+  line-height: 24px;
+
+}
+.button:hover{
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    box-sizing: border-box;
+}
+.footer-icon{
+  color: #505F79;
+  text-decoration: none;
+}
+footer ul>li {
+  display: inline;
+  margin-left: 25px;
 }
